@@ -65,15 +65,16 @@ function handleNewSave(){
     blankFields();
 }
 function populateForm(){
-    documement.getElementId("bookTitle").value = myBook.title;
-    documement.getElementId("bookAuthor").value = myBook.author;
-    documement.getElementId("bookGenre").value = myBook.genre;
-    documement.getElementId("bookAvlb").value = myBook.numAvlb;
-    documement.getElementId("bookIsbn").value = myBook.isbn;
-    documement.getElementId("bookLength").value = myBook.length;
-    documement.getElementId("bookCover").value = myBook.cover;
-    var html = "<img class = \"coverArt\" src= \"" + myBook.cover + "\"></img>";
-    document.getElementById("picBox").innerHTML = html;
+        console.log(myBook)
+        document.getElementById("bookTitle").value = myBook.title;
+        document.getElementById("bookAuthor").value = myBook.author;
+        document.getElementById("bookGenre").value = myBook.genre;
+        document.getElementById("bookAvlb").value = myBook.numAvlb;
+        document.getElementById("bookIsbn").value = myBook.isbn;
+        document.getElementById("bookLength").value = myBook.length;
+        document.getElementById("bookCover").value = myBook.cover;
+        var html = "<img class = \"coverArt\" src= \"" + myBook.cover + "\"></img>";
+        document.getElementById("picBox").innerHTML = html;
 }
 
 function hideButtons(){
